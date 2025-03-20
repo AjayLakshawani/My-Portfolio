@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfoli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --headc: #384363;
+            --mainc: aliceblue;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--mainc);
+            color: var(--headc);
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            background-color: var(--headc);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            padding: 0 20px;
+        }
+
+        nav h1 {
+            color: white;
+            margin: 0;
+            font-size: 40px;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 31px;
+            color: white;
+            font-size: 27px;
+            font-weight: 400;
+        }
+
+        .s1 {
+            display: flex;
+            justify-content: space-around;
+          
+         
+        }
+
+
+        .left {
+            color: var(--headc);
+            font-size: 2rem;
+            margin: 110px 30px;
+        }
+
+        .right {
+            margin: 50px 10px;
+        }
+
+        .pur {
+            color: blueviolet;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+
+
+        .typing {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid black;
+            width: 0;
+            animation: typing 2s steps(8) forwards, blink 0.5s infinite;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(246, 15, 54);
+        }
+
+        nav ul li a:active {
+            border: 2px solid white;
+            padding: 5px 10px;
+            border-radius: 10px;
+
+        }
+
+        .cap {
+
+            font-size: 50px;
+            font-weight: 500;
+            color: black;
+        }
+
+        #contacts .contact {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        #contacts .contact a {
+            text-decoration: none;
+            color: var(--headc);
+        }
+
+        #contacts h2 {
+            font-size: 50px;
+            font-weight: 600;
+            font-family: "poppins";
+            padding: 50px 70px;
+            color: black;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <h1>portfolio.</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+
+
+            </ul>
+
+
+        </nav>
+    </header>
+    <main>
+        <section class="s1" id="home">
+            <article class="left">
+                <h2>Hi,</h2>
+                <h2>I am <span class="pur">Ajay</span></h2>
+                <h2><span class="typing">Web Developer</span></h2>
+            </article>
+            <article class="right">
+                <img src="profile.png" alt="dp" width="500px">
+            </article>
+        </section>
+
+
+        <section id="skill">
+            <h2>My Skills </h2>
+
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="react2.png" alt="React">
+                    <figcaption>React</figcaption>
+                </div>
+                <div class="skill-card">
+                    <img src="java.png" alt="Java">
+                    <figcaption>Java</figcaption>
+                </div>
+                <div class="skill-card">
+                    <img src="sql.png" alt="SQL">
+                    <figcaption>SQL</figcaption>
+                </div>
+                <div class="skill-card">
+                    <img src="python.png" alt="Python">
+                    <figcaption>Python</figcaption>
+                </div>
+                <div class="skill-card">
+                    <img src="c.png" alt="C Programming">
+                    <figcaption>C Programming</figcaption>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="about">
+            <article>
+                <h2>About Me</h2>
+                <p>
+                    Hi, I’m Ajay Lakshawani, Web Developer, and Cricketer with a keen eye for detail and a drive to
+                    create meaningful work.
+                    With a strong foundation in Web Development, I’m always excited to take on new challenges and push
+                    the boundaries of creativity.<br><br>
+
+
+                    I believe that great work starts with understanding the needs of the client and the audience. My
+                    approach is rooted in collaboration, clear communication, and a commitment to excellence. I strive
+                    to deliver solutions that not only meet expectations but exceed them.<br><br>
+
+                    If you’d like to collaborate or learn more about my work, feel free to reach out!
+                </p>
+            </article>
+            <figure>
+                <img src="pc.jpg" alt="About Me">
+            </figure>
+        </section>
+
+
+
+
+        <section id="contacts">
+            <h2>CONTACT ME </h2>
+
+
+            <ul class="contact">
+                <li><a href="https://github.com/AjayLakshawani" target="_blank">
+                        <figure class="icons"><img src="github.svg" alt="github" width="170px">
+                            <figure>
+                                <figcaption class="cap">GitHub</figcaption>
+
+                    </a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank">
+                        <figure class="icons"><img src="lindn.svg" alt="linkedin" width="170px" ">
+                            <figure>
+                                <figcaption class=" cap"> Linkedin</figcaption>
+
+                    </a></li>
+                <li><a href="https://x.com/" target="_blank">
+                        <figure class="icons"><img src="twitter.svg" alt="twitter" width="170px ">
+                            <figure>
+                                <figcaption class="cap"> Twitter</figcaption>
+
+                    </a></li>
+                <li><a href="https://www.instagram.com/ajay_lakshwani_" target="_blank">
+                        <figure class="icons"><img src="insta.svg" alt="instagram" width="170px ">
+                            <figure>
+                                <figcaption class="cap"> Instagram</figcaption>
+
+                    </a></li>
+
+            </ul>
+        </section>
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <h4 id="footer">&copy; My portfolio 2025</h4>
+    </footer>
+</body>
+
+</html>
